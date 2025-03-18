@@ -16,6 +16,15 @@
       color: #333;
     }
   </style>
+  <!-- Add CSS link for GitHub Pages -->
+  <script>
+    if (window.location.hostname.includes('github.io')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/musica-x/assets/index-Dgu7-8dm.css';
+      document.head.appendChild(link);
+    }
+  </script>
 </head>
 <body>
   <h1>Musica X</h1>
@@ -32,7 +41,7 @@
       script.type = 'module';
       
       // Set the correct path for GitHub Pages
-      script.src = '/MusicaX/assets/index.js';
+      script.src = '/musica-x/assets/index-DjD_cSRM.js';
       
       // Append to document
       document.body.appendChild(script);
