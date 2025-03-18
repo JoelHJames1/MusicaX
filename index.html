@@ -1,16 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <title>Musica X</title>
-    <script type="module" crossorigin src="/MusicaX/assets/index-DjD_cSRM.js"></script>
-    <link rel="stylesheet" crossorigin href="/MusicaX/assets/index-Dgu7-8dm.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musica X</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Musica X</h1>
+  <p>Welcome to Musica X!</p>
+  
+  <div id="root"></div>
+  
+  <!-- Load React app with a simple script tag -->
+  <script>
+    // Check if we're on GitHub Pages
+    if (window.location.hostname.includes('github.io')) {
+      // Create a script element
+      const script = document.createElement('script');
+      script.type = 'module';
+      
+      // Set the correct path for GitHub Pages
+      script.src = '/MusicaX/assets/index.js';
+      
+      // Append to document
+      document.body.appendChild(script);
+    } else {
+      // For local development
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = '/src/main.tsx';
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
 </html>
