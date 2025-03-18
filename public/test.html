@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages Test</title>
+  <script>
+    // Log any errors
+    window.onerror = function(message, source, lineno, colno, error) {
+      const errorDiv = document.getElementById('error');
+      if (errorDiv) {
+        errorDiv.innerHTML += `<p>Error: ${message}</p>`;
+        if (source) errorDiv.innerHTML += `<p>Source: ${source}</p>`;
+        if (lineno) errorDiv.innerHTML += `<p>Line: ${lineno}</p>`;
+      }
+      console.error(message, source, lineno, colno, error);
+      return true;
+    };
+
+    // Log environment info
+    window.addEventListener('DOMContentLoaded', function() {
+      const infoDiv = document.getElementById('info');
+      if (infoDiv) {
+        infoDiv.innerHTML += `<p>Base URL: ${document.baseURI}</p>`;
+        infoDiv.innerHTML += `<p>Location: ${window.location.href}</p>`;
+        infoDiv.innerHTML += `<p>Protocol: ${window.location.protocol}</p>`;
+        infoDiv.innerHTML += `<p>Host: ${window.location.host}</p>`;
+        infoDiv.innerHTML += `<p>Pathname: ${window.location.pathname}</p>`;
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>GitHub Pages Test</h1>
+  <p>If you can see this page, basic HTML is working.</p>
+  
+  <h2>Environment Information:</h2>
+  <div id="info"></div>
+  
+  <h2>Errors:</h2>
+  <div id="error"></div>
+
+  <p>Check the browser console for more detailed error messages.</p>
+  
+  <p><a href="../">Try to go to main app</a></p>
+</body>
+</html>
