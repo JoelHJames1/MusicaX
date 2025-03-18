@@ -4,54 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Musica X</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
-  <!-- Add CSS link for GitHub Pages -->
   <script>
-    if (window.location.hostname.includes('github.io')) {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = '/musica-x/assets/index-Dgu7-8dm.css';
-      document.head.appendChild(link);
-    }
+    // Redirect to the static app page
+    window.location.href = 'app.html';
   </script>
 </head>
 <body>
   <h1>Musica X</h1>
-  <p>Welcome to Musica X!</p>
-  
-  <div id="root"></div>
-  
-  <!-- Load React app with a simple script tag -->
-  <script>
-    // Check if we're on GitHub Pages
-    if (window.location.hostname.includes('github.io')) {
-      // Create a script element
-      const script = document.createElement('script');
-      script.type = 'module';
-      
-      // Set the correct path for GitHub Pages
-      script.src = '/musica-x/assets/index-DjD_cSRM.js';
-      
-      // Append to document
-      document.body.appendChild(script);
-    } else {
-      // For local development
-      const script = document.createElement('script');
-      script.type = 'module';
-      script.src = '/src/main.tsx';
-      document.body.appendChild(script);
-    }
-  </script>
+  <p>Redirecting to Musica X...</p>
+  <p>If you are not redirected automatically, <a href="app.html">click here</a>.</p>
 </body>
 </html>
